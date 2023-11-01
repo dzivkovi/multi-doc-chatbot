@@ -26,8 +26,8 @@ Clone the repository, set up the virtual environment, and install the required p
 ```
 git clone git@github.com:smaameri/multi-doc-chatbot.git
 cd multi-doc-chatbot
-python3 -m venv .venv
-. .venv/bin/activate
+python -m venv .venv
+. .venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
@@ -45,7 +45,7 @@ Kick of the multi-doc chatbot, and start interacting with your files. Place any 
 interact with inside the `/docs` folder. Enter `q` to exit the prompt at any time.
 
 ```python
-python3 multi-doc-chatbot.py
+python multi-doc-chatbot.py
 ```
 
 It's not perfect, and it does give strange answers sometimes, but it does get a basic setup running. It does show 

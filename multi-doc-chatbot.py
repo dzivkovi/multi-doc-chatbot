@@ -25,7 +25,7 @@ for file in os.listdir("docs"):
         documents.extend(loader.load())
     elif file.endswith('.txt'):
         text_path = "./docs/" + file
-        loader = TextLoader(text_path)
+        loader = TextLoader(text_path, encoding='utf-8')
         documents.extend(loader.load())
 
 # Split the documents into smaller chunks
